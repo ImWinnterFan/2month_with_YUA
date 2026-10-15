@@ -31,7 +31,7 @@ let heartRotationY = 0;
 
 // スピード判定用
 let currentSpeedLevel = 0;
-const speedThreshold = 0.28;
+const speedThreshold = 0.88;
 
 init();
 animate();
