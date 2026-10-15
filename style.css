@@ -1,0 +1,23 @@
+/* スマホ縦画面向け基本設定（パステルピンク背景） */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff1f2; /* 優しくロマンチックな薄ピンク */
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#webgl-canvas {
+    touch-action: none;
+}
+
+/* バーを絶対に引っ張れないようにする設定 */
+#
