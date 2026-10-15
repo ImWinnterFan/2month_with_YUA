@@ -31,7 +31,7 @@ let heartRotationY = 0;
 
 // スピード判定用
 let currentSpeedLevel = 0;
-const speedThreshold = 5;
+const speedThreshold = 0.28;
 
 init();
 animate();
@@ -203,7 +203,7 @@ function onPointerMove(e) {
     if (!isDragging || mode === 'transitioning') return;
 
     const deltaX = e.clientX - previousMousePosition.x;
-    targetVelocityX = deltaX * 0.000001;
+    targetVelocityX = deltaX * 0.01;
 
     previousMousePosition = { x: e.clientX, y: e.clientY };
 }
