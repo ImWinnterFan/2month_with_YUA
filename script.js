@@ -403,8 +403,8 @@ function animate() {
     currentVelocityX += (targetVelocityX - currentVelocityX) * 0.15;
 
     if (!isDragging) {
-        targetVelocityX *= 1.5;
-        currentVelocityX *= 1.5;
+        targetVelocityX *= 1.0;
+        currentVelocityX *= 1.0;
     }
 
     if (mode !== 'transitioning') {
