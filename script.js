@@ -203,7 +203,7 @@ function onPointerMove(e) {
     if (!isDragging || mode === 'transitioning') return;
 
     const deltaX = e.clientX - previousMousePosition.x;
-    targetVelocityX = deltaX * 0.0001;
+    targetVelocityX = deltaX * 0.000001;
 
     previousMousePosition = { x: e.clientX, y: e.clientY };
 }
